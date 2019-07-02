@@ -177,9 +177,6 @@ h1 {
 }
 ```
 
-第一天下午完成的内容
---------------------------------------------------------------------------------------------------
-
 常用的属性:
 
 width : 宽度
@@ -227,7 +224,6 @@ div,h1~h6,ul,li,p
 
 第一天晚自习完成的内容
 
------------------------------------------------------------------------------------------------------------
 #### 浮动与定位
 
 ##### 浮动
@@ -284,9 +280,96 @@ fixed
 
 transform
 
+旋转角度
+
+`transform: rotate(角度deg);`
+
+缩放比
+
+`transform: scale(x轴倍数,y轴倍数);`
+
+位移
+
+`transform: translate(x轴位移,y轴位移);`
+
+倾斜角度
+
+`transform: skew(x轴倾斜,y轴倾斜);`
+
+x轴倾斜角度
+
+`transform: rotateX(120deg);`
+
+y轴倾斜角度
+
+`transform: rotateY(120deg);`
+
+动画时间
+
+transition
+
+```
+div {
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    transition: width 2s;
+}
+
+div:hover {
+    width: 300px;
+    height: 100px;
+}
+```
+
 animation
 
-video与audio标签
+```
+<!DOCTYPE html>
+<html>
 
-### 适用bootstrap提供的css文件辅助完成作业
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: myfirst 5s;
+        }
+
+        @keyframes myfirst {
+            0% {
+                background: red;
+            }
+
+            25% {
+                background: yellow;
+            }
+
+            50% {
+                background: blue;
+            }
+
+            100% {
+                background: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+    <p><b>注释：</b>当动画完成时，会变回初始的样式。</p>
+
+
+    <p><b>注意:</b> 该实例在 Internet Explorer 9 及更早 IE 版本是无效的。</p>
+
+</body>
+
+</html>
+```
 
